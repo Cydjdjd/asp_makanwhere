@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-vx$qcze4rf1635c1$+02)1hk4-i_goalv+@bbd4jtyvxbjt-d8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["shabirk21.pythonanywhere.com"]
 
 
 # Application definition
@@ -54,7 +54,21 @@ MIDDLEWARE = [
 ]
 
 # REST Framework settings
-REST_FRAMEWORK = {}
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticated"],
+}
+CSRF_TRUSTED_ORIGINS = [
+    "http://127.0.0.1:8000",
+    "http://127.0.0.1:8080",
+]
+
+CORS_ALLOW_HEADERS = [
+    "csrfmiddlewaretoken",  # add any other required headers as well
+    "Access-Control-Allow-Credentials",
+]
+
+CORS_ALLOWED_ORIGINS = ["http://localhost:8080", "http://127.0.0.1:8080"]
+CORS_ALLOW_CREDENTIALS = True
 
 
 ROOT_URLCONF = "core.urls"
