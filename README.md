@@ -10,7 +10,7 @@
 location (this can be a address or postal code)
 distance (how far from provided location to show restaurants)
 
-**Results: **A list of 20 restaurants that are within the distance will be returned
+**Results:** A list of 20 restaurants that are within the distance will be returned
 
 **Usage:**
 
