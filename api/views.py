@@ -53,3 +53,7 @@ class GoogleMapsAPIView(APIView):
                 "Please enter a location and distance",
                 status=status.HTTP_400_BAD_REQUEST,
             )
+
+
+class WebScraperView(APIView):
+    pass
