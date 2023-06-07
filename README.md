@@ -2,6 +2,10 @@
 
 ## API Usage
 
+### Requirements
+
+jQuery - "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+
 ### Get a list of restaurants nearby user location
 
 **Endpoint:** "https://makanwhere.pythonanywhere.com/api/nearby/"
